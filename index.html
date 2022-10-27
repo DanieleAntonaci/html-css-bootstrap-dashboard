@@ -11,11 +11,61 @@
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav class="d-flex align-items-center">
+            <a href="#" class="ms_title px-3">
+                <img src="img/logo-big.svg" alt="Logo" class="ms_logo">
+                <img src="img/Logo.png" alt="" class="ms_small_logo">
+            </a>
+            <form action="serch" id="serch">
+                <input type="search" name="" id="" class="border-0 rounded-2 hs-search-field__input px-2" placeholder=" &#xf002; Prova a cercare: Lezioni di Laravel " style="font-family: Arial, FontAwesome;">
+            </form>
+            <ul class="d-flex ps-2 mb-0">
+                <li class="d-none d-md-block"><a href="#" class="text-black"><i class="fa-solid fa-list"></i></a></li>
+                <li class="d-none d-md-block"><a href="#" class="text-black"><i class="fa-solid fa-circle-question"></i></a></li>
+                <li class="d-none d-md-block"><a href="#" class="text-black"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                <li class="dropdown">
+                    <a href="#" class="text-black nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell "></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                </li>
+            </ul>
+            
+        </nav>
     </header>
     <main class="d-flex">
-        <section class="ms-left-bar">
-            
+        <section class="ms_left_bar d-flex flex-column justify-content-between ps-0">
+            <ul>
+                <li class="pb-3">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="d-none d-sm-none d-md-inline">Home</span>
+                    </a>
+                </li>
+                <li class="pb-3">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="d-none d-sm-none d-md-inline">Stats</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="d-none d-sm-none d-md-inline">Signals</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>                    
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="d-none d-sm-none d-md-inline">Admin</span>
+                    </a>
+                </li>
+            </ul>
         </section>
         <section class="ms_right_bar ">
             <div class="ms_title">
@@ -23,7 +73,7 @@
             </div>
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-8 ms-border">
+                    <div class="col-12 col-md-8 ms-border">
                         <div class="ms_box">
                             
                         </div>
@@ -31,7 +81,7 @@
 
                         </div>
                     </div>
-                    <div class="col-4 ms-border">
+                    <div class="col-12 col-md-4 ms-border">
                         <div class="ms_box">
 
                         </div>
