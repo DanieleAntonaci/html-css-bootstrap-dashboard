@@ -66,9 +66,18 @@ main a{
     
 }
 .ms_right_bar .ms_title{
-    min-height: 150px;
+    min-height: 100px;
     
-    background-color: yellow;
+    background-color: #1b72e8;
+}
+.ms_app{
+    margin-left: 2px;
+    margin-bottom: 3px;
+    padding: 3px 7px;
+    border-radius: 20px;
+    background-color: #165bba;
+    font-size: 13px;
+    display: inline-block;
 }
 .ms_box{
     margin-top: 20px;
