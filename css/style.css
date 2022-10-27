@@ -9,9 +9,8 @@ ul li{
         HEADER
  ************************/
 nav{
-    
+    z-index: 999;
     height: 60px;
-
 }
 nav #serch {
     width: 100%;
@@ -41,7 +40,6 @@ nav li{
 main{
     height: calc(100vh - 60px);
     width: 100%;
-    background-color: brown;
 }
 main a{
     color: white;
