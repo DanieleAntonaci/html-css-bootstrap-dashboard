@@ -1,0 +1,158 @@
+/*************************
+        GENERAL
+************************/
+ul li{
+   list-style-type: none; 
+}
+
+/*************************
+        HEADER
+ ************************/
+nav{
+    z-index: 999;
+    height: 60px;
+}
+nav #serch {
+    width: 100%;
+    height: 35px;
+
+}
+input[type=search]{
+    width: 100%;
+    height: 35px;
+    background-color: #e5e5e5;
+    
+}
+.ms_small_logo{
+    display: none;
+    height: 30px;
+}
+nav li{
+    padding: 0 10px;
+}
+.fa-bell{
+    color: #ff8f00;
+}
+
+/*************************
+        MAIN
+ ************************/
+main{
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+main a{
+    color: white;
+    text-decoration: none;
+}
+/* big container */
+.ms_left_bar{
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(45deg, #11283e 0 70%,  #051e34 0 );
+}
+.ms_left_bar ul{
+    margin-bottom: 0;
+    margin-top: 18px;
+    padding-left: 0;
+}
+.ms_left_bar li {
+    padding: 10px;
+    margin-left: 10px;
+}
+.ms_left_bar li:hover{
+    background-color: rgb(141, 141, 141);
+    margin-right: 16px;
+}
+.ms_left_bar li:hover a{
+    color: white;
+}
+.ms_right_bar{
+    width: calc(100% - 150px);
+    height: 100%;
+    overflow-y: auto;
+    font-size: 12px;
+    
+}
+.ms_right_bar .ms_title{
+    min-height: 100px;
+    
+    background-color: #1b72e8;
+}
+.ms_app{
+    margin-left: 2px;
+    margin-bottom: 3px;
+    padding: 2px 7px 4px;
+    border-radius: 20px;
+    background-color: #165bba;
+    font-size: 13px;
+    display: inline-block;
+}
+.ms_app:hover{
+    background-color: #0f3e80;
+}
+.ms_box{
+    margin-top: 20px;
+    min-height: 200px;
+    width: 100%;
+    
+}
+.ms_box button{
+    font-size: 13px;
+}
+.ms_box table td button{
+    padding: 6px 9px;
+}
+.ms_box table td, 
+.ms_box table th{
+    text-align: center;
+}
+.ms_box table td:first-child,
+.ms_box table th:first-child{
+    text-align: left;
+}
+.ms_class_logo{
+    padding: 5px 4px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+.ms_stato{
+    padding: 0 7px;
+    border-radius: 6px;
+    color: white;
+    display: inline-block;
+}
+.ms_box_grafic img{
+    width: 100%;
+}
+.ms_box_grafic a{
+    color: #1b72e8;
+    text-decoration: underline;
+}
+/*************************
+        MEDIA
+ ************************/
+ @media screen and (max-width:991px) {
+    .ms_left_bar{
+        width: 60px;
+    }
+    .ms_right_bar{
+        width: calc(100% - 60px);
+    }
+    .ms_small_logo{
+        display: inline-block;
+    }
+    .ms_logo{
+        display: none;
+    }
+ }
+ @media screen and (max-width:750px) {
+    .ms_start-date{
+        display: none;
+    }
+ }
+ @media screen and (max-width:550px) {
+    .ms_roi{
+        display: none;
+    }
+ }

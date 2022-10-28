@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Boolean dashboard</title>
+</head>
+<body>
+    <header>
+        <nav class="d-flex align-items-center">
+            <a href="#" class="ms_title px-3">
+                <img src="img/logo-big.svg" alt="Logo" class="ms_logo">
+                <img src="img/Logo.png" alt="" class="ms_small_logo">
+            </a>
+            <form action="serch" id="serch">
+                <input type="search" name="serch" id="ms_serch" class="border-0 rounded-2 hs-search-field__input px-2" placeholder=" &#xf002; Prova a cercare: Lezioni di Laravel " style="font-family: Arial, FontAwesome;">
+            </form>
+            <ul class="d-flex ps-2 mb-0">
+                <li class="d-none d-lg-block"><a href="#" class="text-black"><i class="fa-solid fa-list"></i></a></li>
+                <li class="d-none d-lg-block"><a href="#" class="text-black"><i class="fa-solid fa-circle-question"></i></a></li>
+                <li class="d-none d-lg-block"><a href="#" class="text-black"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                <li class="dropdown">
+                    <a href="#" class="text-black nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell "></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                      </ul>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main class="d-flex">
+        <section class="ms_left_bar d-flex flex-column justify-content-between ps-0">
+            <ul >
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="d-none d-md-none d-lg-inline ps-3">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="d-none d-md-none d-lg-inline ps-3">Stats</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="d-none d-md-none d-lg-inline ps-3">Signals</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="mb-3">
+                <li>                    
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="d-none d-md-none d-lg-inline ps-3">Admin</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="ms_right_bar container-fluid pb-3">
+            <div class="ms_title text-white row pb-2">
+                <div class="col-12 col-lg-8 ">
+                    <div class="pt-3">
+                        <h2 class=" d-inline">Boolean</h2>
+                        <span class="ms_app">
+                            Piano blaze
+                        </span>
+                    </div>
+                    <div class="pt-2 ">
+                        <span class="ms_app">
+                            3 app
+                        </span>
+                        <i class="fa-solid fa-angles-right"></i>
+                        <span class="d-none d-lg-inline">
+                            <span class="ms_app">
+                                Boolean mobile app
+                            </span>
+                            <span class="ms_app">
+                                Boolean web app
+                            </span>
+                            <span class="ms_app">
+                                Boolean blog app
+                            </span>
+                        </span>
+                        <i class="fa-solid fa-plus ms_app d-none d-lg-none d-md-inline"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 pt-3 ">
+                    Studenti online negli ultimi 30 giorni
+                    <span class="d-block fs-3">125</span>
+                </div>
+            </div>
+            <div class="container-lg p-0">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="card ms_box">
+                            <div class="card-header d-flex justify-content-between">
+                                <h4>Prossime classi</h4> 
+                                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Aggiungi Classe</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label fs-6">Nome</label>
+                                        <input type="text" class="form-control" id="Classe--" placeholder="Classe--">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="form-label fs-6" for="exampleFormControlInput1">Datepicker</label>
+                                        <input type="date" class="form-control" id="dateStandard" name="dateStandard">
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Salva</button>
+                                    <button type="button" class="btn btn-warning">Reset</button>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <table class="table table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="w-50">Nome</th>
+                                        <th scope="col" class="ms_start-date">Data inizio</th>
+                                        <th scope="col" class="ms_roi">ROI</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col">Azioni</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 75</td>
+                                        <td class="ms_start-date">15 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
+                                        <td >
+                                            <span class="ms_stato bg-success">
+                                                Done
+                                            </span> 
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 76</td>
+                                        <td class="ms_start-date">16 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
+                                        <td>
+                                            <span class="ms_stato bg-success">
+                                                Done
+                                            </span> 
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 77</td>
+                                        <td class="ms_start-date">17 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
+                                        <td>
+                                            <span class="ms_stato bg-warning">
+                                                Process
+                                            </span> 
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 78</td>
+                                        <td class="ms_start-date">18 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
+                                        <td>
+                                            <span class="ms_stato bg-success">
+                                                Done
+                                            </span> 
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 79</td>
+                                        <td class="ms_start-date">19 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
+                                        <td>
+                                            <span class="ms_stato bg-danger">
+                                                Failed
+                                            </span> 
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 80</td>
+                                        <td class="ms_start-date">20 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
+                                        <td>
+                                            <span class="ms_stato bg-success">
+                                                Done
+                                            </span> 
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 81</td>
+                                        <td class="ms_start-date">21 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
+                                        <td>
+                                            <span class="ms_stato bg-danger">
+                                                Failed
+                                            </span> 
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 82</td>
+                                        <td class="ms_start-date">22 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
+                                        <td>
+                                            <span class="ms_stato bg-success">
+                                                Done
+                                            </span> 
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="card ms_box">
+                            <div class="card-header fs-4">
+                              F.A.Q.
+                            </div>
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Come aggiungere una nuova classe?
+                                          </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            Clicca sul + in alto a destra della tabella "Prossime classi"
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          Clicca
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Posso usare auesta dashboard da moblle?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            codice
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card ms_box">
+                            <div class="card-header fs-4">
+                              Todo
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item form-check ps-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Kickoff nuove classi
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item form-check ps-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Lezioni Bootstrap 5 in classe #75
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item form-check ps-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Controllare username github studenti
+                                        </label>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card ms_box">
+                            <div class="card-body ms_box_grafic">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div>
+                                            <canvas id="myChart" width="400" height="400"></canvas>
+                                        </div>                                          
+                                        <h5>Utenti attivi</h5>
+                                        <span>Lista degli utenti attivi in piattaforma nell' ultimo mese</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Gennaio: 1200
+                                    </li>
+                                    <li class="list-group-item">
+                                        Febbraio: 800
+                                    </li>
+                                    <li class="list-group-item">
+                                        Marzo: 1500
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Visualizza report approfondito</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
