@@ -84,13 +84,26 @@ main a{
     width: 100%;
     
 }
+.ms_box button{
+    font-size: 13px;
+}
 .ms_class_logo{
     padding: 5px 4px;
     border-radius: 50%;
     font-size: 16px;
 }
-
-
+.ms_stato{
+    padding: 2px 7px;
+    border-radius: 6px;
+    color: white;
+}
+.ms_box_grafic img{
+    width: 100%;
+}
+.ms_box_grafic a{
+    color: #1b72e8;
+    text-decoration: underline;
+}
 /*************************
         MEDIA
  ************************/
