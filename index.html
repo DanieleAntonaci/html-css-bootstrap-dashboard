@@ -17,7 +17,7 @@
                 <img src="img/Logo.png" alt="" class="ms_small_logo">
             </a>
             <form action="serch" id="serch">
-                <input type="search" name="" id="" class="border-0 rounded-2 hs-search-field__input px-2" placeholder=" &#xf002; Prova a cercare: Lezioni di Laravel " style="font-family: Arial, FontAwesome;">
+                <input type="search" name="serch" id="ms_serch" class="border-0 rounded-2 hs-search-field__input px-2" placeholder=" &#xf002; Prova a cercare: Lezioni di Laravel " style="font-family: Arial, FontAwesome;">
             </form>
             <ul class="d-flex ps-2 mb-0">
                 <li class="d-none d-md-block"><a href="#" class="text-black"><i class="fa-solid fa-list"></i></a></li>
@@ -42,19 +42,19 @@
                 <li class="pb-3">
                     <a href="#">
                         <i class="fa-solid fa-house"></i>
-                        <span class="d-none d-sm-none d-md-inline">Home</span>
+                        <span class="d-none d-sm-none d-md-inline ps-3">Home</span>
                     </a>
                 </li>
                 <li class="pb-3">
                     <a href="#">
                         <i class="fa-solid fa-chart-simple"></i>
-                        <span class="d-none d-sm-none d-md-inline">Stats</span>
+                        <span class="d-none d-sm-none d-md-inline ps-3">Stats</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <i class="fa-solid fa-signal"></i>
-                        <span class="d-none d-sm-none d-md-inline">Signals</span>
+                        <span class="d-none d-sm-none d-md-inline ps-3">Signals</span>
                     </a>
                 </li>
             </ul>
@@ -62,7 +62,7 @@
                 <li>                    
                     <a href="#">
                         <i class="fa-solid fa-gear"></i>
-                        <span class="d-none d-sm-none d-md-inline">Admin</span>
+                        <span class="d-none d-sm-none d-md-inline ps-3">Admin</span>
                     </a>
                 </li>
             </ul>
@@ -81,15 +81,18 @@
                             3 app
                         </span>
                         <i class="fa-solid fa-angles-right"></i>
-                        <span class="ms_app">
-                            Boolean mobile app
+                        <span class="d-none d-md-inline">
+                            <span class="ms_app">
+                                Boolean mobile app
+                            </span>
+                            <span class="ms_app">
+                                Boolean web app
+                            </span>
+                            <span class="ms_app">
+                                Boolean blog app
+                            </span>
                         </span>
-                        <span class="ms_app">
-                            Boolean web app
-                        </span>
-                        <span class="ms_app">
-                            Boolean blog app
-                        </span>
+                        <i class="fa-solid fa-plus ms_app d-none d-md-none d-sm-inline"></i>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 pt-3 ">
@@ -97,27 +100,157 @@
                     <span class="d-block fs-3">125</span>
                 </div>
             </div>
-            <div class="container-lg">
+            <div class="container-lg p-0">
                 <div class="row">
                     <div class="col-12 col-md-8">
-                        <div class="ms_box">
-                            
+                        <div class="card ms_box">
+                            <div class="card-header fs-4">
+                                Prossime classi
+                            </div>
+                            <div class="p-3">
+                                <table class="table table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="w-50">Nome</th>
+                                        <th scope="col">Data inizio</th>
+                                        <th scope="col">ROI</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col">Azioni</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 75</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 76</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>@fat</td>
+                                        <td>@fat</td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 77</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 78</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 79</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 80</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 81</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 82</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
                         </div>
-                        <div class="ms_box">
-
+                        <div class="card ms_box">
+                            <div class="card-header fs-4">
+                              Quote
+                            </div>
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                          </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            Clicca
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Accordion Item #2
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          Clicca
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Accordion Item #3
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            codice
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </blockquote>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="ms_box">
-
+                        <div class="card ms_box">
+                            <div class="card-header fs-4">
+                              Quote
+                            </div>
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <p>A well-known quote, contained in a blockquote element.</p>
+                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              </blockquote>
+                            </div>
                         </div>
-                        <div class="ms_box">
-
+                        <div class="card ms_box">
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <p>A well-known quote, contained in a blockquote element.</p>
+                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              </blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </disection>
+        </section>
     </main>
 
       

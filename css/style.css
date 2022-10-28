@@ -61,6 +61,7 @@ main a{
     width: calc(100% - 150px);
     height: 100%;
     overflow-y: auto;
+    font-size: 12px;
     
 }
 .ms_right_bar .ms_title{
@@ -81,9 +82,13 @@ main a{
     margin-top: 20px;
     min-height: 200px;
     width: 100%;
-    background-color: cadetblue;
+    
 }
-
+.ms_class_logo{
+    padding: 5px 4px;
+    border-radius: 50%;
+    font-size: 16px;
+}
 
 
 /*************************
