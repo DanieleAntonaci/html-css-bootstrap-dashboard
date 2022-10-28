@@ -20,9 +20,9 @@
                 <input type="search" name="serch" id="ms_serch" class="border-0 rounded-2 hs-search-field__input px-2" placeholder=" &#xf002; Prova a cercare: Lezioni di Laravel " style="font-family: Arial, FontAwesome;">
             </form>
             <ul class="d-flex ps-2 mb-0">
-                <li class="d-none d-md-block"><a href="#" class="text-black"><i class="fa-solid fa-list"></i></a></li>
-                <li class="d-none d-md-block"><a href="#" class="text-black"><i class="fa-solid fa-circle-question"></i></a></li>
-                <li class="d-none d-md-block"><a href="#" class="text-black"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                <li class="d-none d-lg-block"><a href="#" class="text-black"><i class="fa-solid fa-list"></i></a></li>
+                <li class="d-none d-lg-block"><a href="#" class="text-black"><i class="fa-solid fa-circle-question"></i></a></li>
+                <li class="d-none d-lg-block"><a href="#" class="text-black"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
                 <li class="dropdown">
                     <a href="#" class="text-black nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell "></i></a>
                     <ul class="dropdown-menu">
@@ -41,19 +41,19 @@
                 <li>
                     <a href="#">
                         <i class="fa-solid fa-house"></i>
-                        <span class="d-none d-sm-none d-md-inline ps-3">Home</span>
+                        <span class="d-none d-md-none d-lg-inline ps-3">Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <i class="fa-solid fa-chart-simple"></i>
-                        <span class="d-none d-sm-none d-md-inline ps-3">Stats</span>
+                        <span class="d-none d-md-none d-lg-inline ps-3">Stats</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <i class="fa-solid fa-signal"></i>
-                        <span class="d-none d-sm-none d-md-inline ps-3">Signals</span>
+                        <span class="d-none d-md-none d-lg-inline ps-3">Signals</span>
                     </a>
                 </li>
             </ul>
@@ -61,14 +61,14 @@
                 <li>                    
                     <a href="#">
                         <i class="fa-solid fa-gear"></i>
-                        <span class="d-none d-sm-none d-md-inline ps-3">Admin</span>
+                        <span class="d-none d-md-none d-lg-inline ps-3">Admin</span>
                     </a>
                 </li>
             </ul>
         </section>
         <section class="ms_right_bar container-fluid pb-3">
             <div class="ms_title text-white row pb-2">
-                <div class="col-12 col-md-8 ">
+                <div class="col-12 col-lg-8 ">
                     <div class="pt-3">
                         <h2 class=" d-inline">Boolean</h2>
                         <span class="ms_app">
@@ -80,7 +80,7 @@
                             3 app
                         </span>
                         <i class="fa-solid fa-angles-right"></i>
-                        <span class="d-none d-md-inline">
+                        <span class="d-none d-lg-inline">
                             <span class="ms_app">
                                 Boolean mobile app
                             </span>
@@ -91,17 +91,17 @@
                                 Boolean blog app
                             </span>
                         </span>
-                        <i class="fa-solid fa-plus ms_app d-none d-md-none d-sm-inline"></i>
+                        <i class="fa-solid fa-plus ms_app d-none d-lg-none d-md-inline"></i>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 pt-3 ">
+                <div class="col-12 col-lg-4 pt-3 ">
                     Studenti online negli ultimi 30 giorni
                     <span class="d-block fs-3">125</span>
                 </div>
             </div>
             <div class="container-lg p-0">
                 <div class="row">
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-lg-8">
                         <div class="card ms_box">
                             <div class="card-header d-flex justify-content-between">
                                 <h4>Prossime classi</h4> 
@@ -131,8 +131,8 @@
                                     <thead>
                                       <tr>
                                         <th scope="col" class="w-50">Nome</th>
-                                        <th scope="col">Data inizio</th>
-                                        <th scope="col">ROI</th>
+                                        <th scope="col" class="ms_start-date">Data inizio</th>
+                                        <th scope="col" class="ms_roi">ROI</th>
                                         <th scope="col">Stato</th>
                                         <th scope="col">Azioni</th>
                                       </tr>
@@ -140,8 +140,8 @@
                                     <tbody>
                                       <tr>
                                         <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 75</td>
-                                        <td>15 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="ms_start-date">15 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
                                         <td >
                                             <span class="ms_stato bg-success">
                                                 Done
@@ -154,8 +154,8 @@
                                       </tr>
                                       <tr>
                                         <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 76</td>
-                                        <td>16 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="ms_start-date">16 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
                                         <td>
                                             <span class="ms_stato bg-success">
                                                 Done
@@ -168,8 +168,8 @@
                                       </tr>
                                       <tr>
                                         <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 77</td>
-                                        <td>17 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="ms_start-date">17 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
                                         <td>
                                             <span class="ms_stato bg-warning">
                                                 Process
@@ -182,8 +182,8 @@
                                       </tr>
                                       <tr>
                                         <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 78</td>
-                                        <td>18 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="ms_start-date">18 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
                                         <td>
                                             <span class="ms_stato bg-success">
                                                 Done
@@ -196,8 +196,8 @@
                                       </tr>
                                       <tr>
                                         <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 79</td>
-                                        <td>19 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="ms_start-date">19 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
                                         <td>
                                             <span class="ms_stato bg-danger">
                                                 Failed
@@ -210,8 +210,8 @@
                                       </tr>
                                       <tr>
                                         <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 80</td>
-                                        <td>20 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="ms_start-date">20 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
                                         <td>
                                             <span class="ms_stato bg-success">
                                                 Done
@@ -224,8 +224,8 @@
                                       </tr>
                                       <tr>
                                         <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 81</td>
-                                        <td>21 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="ms_start-date">21 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
                                         <td>
                                             <span class="ms_stato bg-danger">
                                                 Failed
@@ -238,8 +238,8 @@
                                       </tr>
                                       <tr>
                                         <td><i class="fa-solid fa-code me-1 ms_class_logo text-white bg-danger"></i> Classe 82</td>
-                                        <td>22 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="ms_start-date">22 Feb 2021</td>
+                                        <td class="ms_roi">20%</td>
                                         <td>
                                             <span class="ms_stato bg-success">
                                                 Done
@@ -269,7 +269,7 @@
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                           <div class="accordion-body">
-                                            Clicca
+                                            Clicca sul + in alto a destra della tabella "Prossime classi"
                                           </div>
                                         </div>
                                       </div>
@@ -302,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-lg-4">
                         <div class="card ms_box">
                             <div class="card-header fs-4">
                               Todo

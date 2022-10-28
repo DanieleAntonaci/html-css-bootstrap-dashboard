@@ -49,11 +49,7 @@ main a{
 .ms_left_bar{
     width: 150px;
     height: 100%;
-    /* background: linear-gradient(20deg, #10283e 65%, #051e34 35%); */
     background: linear-gradient(45deg, #11283e 0 70%,  #051e34 0 );
-
-
-
 }
 .ms_left_bar ul{
     margin-bottom: 0;
@@ -86,11 +82,14 @@ main a{
 .ms_app{
     margin-left: 2px;
     margin-bottom: 3px;
-    padding: 3px 7px;
+    padding: 2px 7px 4px;
     border-radius: 20px;
     background-color: #165bba;
     font-size: 13px;
     display: inline-block;
+}
+.ms_app:hover{
+    background-color: #0f3e80;
 }
 .ms_box{
     margin-top: 20px;
@@ -104,15 +103,24 @@ main a{
 .ms_box table td button{
     padding: 6px 9px;
 }
+.ms_box table td, 
+.ms_box table th{
+    text-align: center;
+}
+.ms_box table td:first-child,
+.ms_box table th:first-child{
+    text-align: left;
+}
 .ms_class_logo{
     padding: 5px 4px;
     border-radius: 50%;
     font-size: 16px;
 }
 .ms_stato{
-    padding: 2px 7px;
+    padding: 0 7px;
     border-radius: 6px;
     color: white;
+    display: inline-block;
 }
 .ms_box_grafic img{
     width: 100%;
@@ -124,17 +132,27 @@ main a{
 /*************************
         MEDIA
  ************************/
- @media screen and (max-width:767px) {
+ @media screen and (max-width:991px) {
     .ms_left_bar{
-        width: 50px;
+        width: 60px;
     }
     .ms_right_bar{
-        width: calc(100% - 50px);
+        width: calc(100% - 60px);
     }
     .ms_small_logo{
         display: inline-block;
     }
     .ms_logo{
+        display: none;
+    }
+ }
+ @media screen and (max-width:750px) {
+    .ms_start-date{
+        display: none;
+    }
+ }
+ @media screen and (max-width:550px) {
+    .ms_roi{
         display: none;
     }
  }
