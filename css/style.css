@@ -87,6 +87,9 @@ main a{
 .ms_box button{
     font-size: 13px;
 }
+.ms_box table td button{
+    padding: 6px 9px;
+}
 .ms_class_logo{
     padding: 5px 4px;
     border-radius: 50%;
