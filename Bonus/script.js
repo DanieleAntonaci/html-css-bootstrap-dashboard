@@ -6,7 +6,7 @@ const myChart = new Chart(ctx, {
         labels: ['Never', 'Every few hours', 'Every hour', 'Multiple time foe hour', 'Costantly'],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2,],
+            data: [18, 49, 11, 13, 9],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
