@@ -11,14 +11,22 @@
 </head>
 <body>
     <header>
-        <nav class="d-flex align-items-center">
+
+                <!-- nav bar -->
+        <nav class="d-flex align-items-center"> 
+
+            <!-- logo header -->
             <a href="#" class="ms_title px-3">
                 <img src="img/logo-big.svg" alt="Logo" class="ms_logo">
                 <img src="img/Logo.png" alt="" class="ms_small_logo">
             </a>
+
+            <!-- serch bar -->
             <form action="serch" id="serch">
                 <input type="search" name="serch" id="ms_serch" class="border-0 rounded-2 hs-search-field__input px-2" placeholder=" &#xf002; Prova a cercare: Lezioni di Laravel " style="font-family: Arial, FontAwesome;">
             </form>
+
+            <!-- list section -->
             <ul class="d-flex ps-2 mb-0">
                 <li class="d-none d-lg-block"><a href="#" class="text-black"><i class="fa-solid fa-list"></i></a></li>
                 <li class="d-none d-lg-block"><a href="#" class="text-black"><i class="fa-solid fa-circle-question"></i></a></li>
@@ -32,11 +40,17 @@
                       </ul>
                 </li>
             </ul>
-            
         </nav>
     </header>
+
+
+
     <main class="d-flex">
+
+        <!-- side bar -->
         <section class="ms_left_bar d-flex flex-column justify-content-between ps-0">
+            
+            <!-- upper section-->
             <ul >
                 <li>
                     <a href="#">
@@ -57,6 +71,8 @@
                     </a>
                 </li>
             </ul>
+
+            <!-- bottom section -->
             <ul class="mb-3">
                 <li>                    
                     <a href="#">
@@ -66,7 +82,11 @@
                 </li>
             </ul>
         </section>
+
+        <!-- main section -->
         <section class="ms_right_bar container-fluid pb-3">
+
+            <!-- title -->
             <div class="ms_title text-white row pb-2">
                 <div class="col-12 col-lg-8 ">
                     <div class="pt-3">
@@ -94,19 +114,26 @@
                         <i class="fa-solid fa-plus ms_app d-none d-lg-none d-md-inline"></i>
                     </div>
                 </div>
+
+                <!-- right size, students online in the last days -->
                 <div class="col-12 col-lg-4 pt-3 ">
                     Studenti online negli ultimi 30 giorni
                     <span class="d-block fs-3">125</span>
                 </div>
             </div>
+
+            <!-- section table -->
             <div class="container-lg p-0">
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="card ms_box">
                             <div class="card-header d-flex justify-content-between">
                                 <h4>Prossime classi</h4> 
+
+                                <!-- button to open the side section -->
                                 <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
 
+                                <!-- side section -->
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Aggiungi Classe</h5>
@@ -126,6 +153,8 @@
                                 </div>
                                 </div>
                             </div>
+
+                            <!-- table -->
                             <div class="p-3">
                                 <table class="table table-hover">
                                     <thead>
@@ -254,6 +283,8 @@
                                   </table>
                             </div>
                         </div>
+
+                        <!-- section faq -->
                         <div class="card ms_box">
                             <div class="card-header fs-4">
                               F.A.Q.
@@ -302,7 +333,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- left side -->
                     <div class="col-12 col-lg-4">
+
+                        <!-- to do checkbox -->
                         <div class="card ms_box">
                             <div class="card-header fs-4">
                               Todo
@@ -331,6 +366,8 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <!-- chart -->
                         <div class="card ms_box">
                             <div class="card-body ms_box_grafic">
                                 <ul class="list-group">
@@ -362,7 +399,7 @@
     </main>
 
       
-    
+    <!-- link js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>

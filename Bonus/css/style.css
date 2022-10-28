@@ -1,5 +1,5 @@
 /*************************
-        GENERAL
+GENERAL
 ************************/
 ul li{
    list-style-type: none; 
@@ -23,16 +23,19 @@ input[type=search]{
     background-color: #e5e5e5;
     
 }
-.ms_small_logo{
-    display: none;
-    height: 30px;
-}
 nav li{
     padding: 0 10px;
 }
 .fa-bell{
     color: #ff8f00;
 }
+
+/* small logo for media quary */
+.ms_small_logo{
+    display: none;
+    height: 30px;
+}
+
 
 /*************************
         MAIN
@@ -45,10 +48,13 @@ main a{
     color: white;
     text-decoration: none;
 }
+
 /* big container */
+/* left side */
 .ms_left_bar{
     width: 150px;
     height: 100%;
+    /* split background  */
     background: linear-gradient(45deg, #11283e 0 70%,  #051e34 0 );
 }
 .ms_left_bar ul{
@@ -60,6 +66,7 @@ main a{
     padding: 10px;
     margin-left: 10px;
 }
+/* hover btn */
 .ms_left_bar li:hover{
     background-color: rgb(141, 141, 141);
     margin-right: 16px;
@@ -67,6 +74,8 @@ main a{
 .ms_left_bar li:hover a{
     color: white;
 }
+
+/* right side */
 .ms_right_bar{
     width: calc(100% - 150px);
     height: 100%;
@@ -74,6 +83,8 @@ main a{
     font-size: 12px;
     
 }
+
+/* upper side */
 .ms_right_bar .ms_title{
     min-height: 100px;
     
@@ -91,6 +102,8 @@ main a{
 .ms_app:hover{
     background-color: #0f3e80;
 }
+
+/* bottom side */
 .ms_box{
     margin-top: 20px;
     min-height: 200px;
@@ -100,6 +113,8 @@ main a{
 .ms_box button{
     font-size: 13px;
 }
+
+/* table setting with over */
 .ms_box table td button{
     padding: 6px 9px;
 }
@@ -122,6 +137,8 @@ main a{
     color: white;
     display: inline-block;
 }
+
+/* chart */
 .ms_box_grafic img{
     width: 100%;
 }
@@ -129,6 +146,9 @@ main a{
     color: #1b72e8;
     text-decoration: underline;
 }
+
+
+
 /*************************
         MEDIA
  ************************/

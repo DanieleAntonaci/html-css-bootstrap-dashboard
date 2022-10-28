@@ -15,23 +15,23 @@ nav{
 nav #serch {
     width: 100%;
     height: 35px;
-
 }
 input[type=search]{
     width: 100%;
     height: 35px;
     background-color: #e5e5e5;
-    
-}
-.ms_small_logo{
-    display: none;
-    height: 30px;
 }
 nav li{
     padding: 0 10px;
 }
 .fa-bell{
     color: #ff8f00;
+}
+
+/* small logo for media quary */
+.ms_small_logo{
+    display: none;
+    height: 30px;
 }
 
 /*************************
@@ -45,10 +45,13 @@ main a{
     color: white;
     text-decoration: none;
 }
+
 /* big container */
+/* left side */
 .ms_left_bar{
     width: 150px;
     height: 100%;
+        /* split background  */
     background: linear-gradient(45deg, #11283e 0 70%,  #051e34 0 );
 }
 .ms_left_bar ul{
@@ -60,6 +63,8 @@ main a{
     padding: 10px;
     margin-left: 10px;
 }
+
+/* hover btn */
 .ms_left_bar li:hover{
     background-color: rgb(141, 141, 141);
     margin-right: 16px;
@@ -67,16 +72,18 @@ main a{
 .ms_left_bar li:hover a{
     color: white;
 }
+
+/* right side */
 .ms_right_bar{
     width: calc(100% - 150px);
     height: 100%;
     overflow-y: auto;
-    font-size: 12px;
-    
+    font-size: 12px;   
 }
+
+/* upper side */
 .ms_right_bar .ms_title{
     min-height: 100px;
-    
     background-color: #1b72e8;
 }
 .ms_app{
@@ -91,15 +98,18 @@ main a{
 .ms_app:hover{
     background-color: #0f3e80;
 }
+
+/* bottom side */
 .ms_box{
     margin-top: 20px;
     min-height: 200px;
-    width: 100%;
-    
+    width: 100%;  
 }
 .ms_box button{
     font-size: 13px;
 }
+
+/* table setting with over */
 .ms_box table td button{
     padding: 6px 9px;
 }
@@ -122,6 +132,8 @@ main a{
     color: white;
     display: inline-block;
 }
+
+/* chart */
 .ms_box_grafic img{
     width: 100%;
 }
@@ -132,6 +144,7 @@ main a{
 /*************************
         MEDIA
  ************************/
+ /* logo */
  @media screen and (max-width:991px) {
     .ms_left_bar{
         width: 60px;
@@ -146,11 +159,13 @@ main a{
         display: none;
     }
  }
+ /* table */
  @media screen and (max-width:750px) {
     .ms_start-date{
         display: none;
     }
  }
+ /* table */
  @media screen and (max-width:550px) {
     .ms_roi{
         display: none;
