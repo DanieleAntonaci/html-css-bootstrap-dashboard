@@ -49,14 +49,28 @@ main a{
 .ms_left_bar{
     width: 150px;
     height: 100%;
-    background-color: #061f35;
-}
+    /* background: linear-gradient(20deg, #10283e 65%, #051e34 35%); */
+    background: linear-gradient(45deg, #11283e 0 70%,  #051e34 0 );
 
-.ms_left_bar ul {
-    padding-left: 1rem;
-    padding-top: 20px;
-}
 
+
+}
+.ms_left_bar ul{
+    margin-bottom: 0;
+    margin-top: 18px;
+    padding-left: 0;
+}
+.ms_left_bar li {
+    padding: 10px;
+    margin-left: 10px;
+}
+.ms_left_bar li:hover{
+    background-color: rgb(141, 141, 141);
+    margin-right: 16px;
+}
+.ms_left_bar li:hover a{
+    color: white;
+}
 .ms_right_bar{
     width: calc(100% - 150px);
     height: 100%;
